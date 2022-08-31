@@ -11,9 +11,9 @@ date.toDateString();
 console.log(hours);
 
 // Current Time for variable usage
-var currentTime = "10";
-// moment().format("h");
-currentTime.toString();
+var currentTime = 9
+
+//moment().format("H");
 
 // moment().format("ha");
 console.log(currentTime);
@@ -34,7 +34,7 @@ var buttonSave = $('#button-addon2');
 // });
 
 //Times
-var scheduleTime = $("#8, #9, #10, #11, #12, #1, #2, #3, #4, #5");
+var scheduleTime = $("#8, #9, #10, #11, #12, #13, #14, #15, #16, #17");
 console.log(scheduleTime);
 var inputTime = $("input");
 
@@ -49,9 +49,12 @@ function timeColor () {
     
         if (tableTime == currentTime){
             $(scheduleTime[i]).addClass("custom-present");
-        }
-        else if (tableTime > currentDate) {
-            $(scheduleTime[i]).addClass("custom-past");
+        } else if (currentTime < 7) {
+            $(scheduleTime[i]).addClass("custom-past")
+        } else if (tableTime < currentTime) {
+            $(scheduleTime[i]).addClass("custom-past")
+        } else {
+        $(scheduleTime[i]).addClass("custom-future")
         }
     };
     };
