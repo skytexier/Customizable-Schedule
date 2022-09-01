@@ -48,7 +48,7 @@ textarea {
 }
 
 .custom-present {
-  background-color: #e2ff61;
+  background-color: #33cbe6;
   color: white;
 }
 
@@ -83,4 +83,8 @@ textarea {
 
 input {
   background-color: #77dd77;
+}
+
+span {
+  font-size: 20px;
 }
